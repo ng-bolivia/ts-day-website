@@ -1,0 +1,91 @@
+---
+const SPEAKERS = [
+  {
+    name: 'Luis',
+    image: '/assets/images/luis.jpg',
+    title: 'MVP'
+  },
+  {
+    name: 'Luis',
+    image: '/assets/images/luis.jpg',
+    title: 'GDE'
+  },
+{
+    name: 'Luis',
+    image: '/assets/images/luis.jpg',
+    title: 'MVP'
+  },
+  {
+    name: 'Luis',
+    image: '/assets/images/luis.jpg',
+    title: 'GDE'
+  },
+  {
+    name: 'Luis',
+    image: '/assets/images/luis.jpg',
+    title: 'MVP'
+  },
+  {
+    name: 'Luis',
+    image: '/assets/images/luis.jpg',
+    title: 'GDE'
+  },
+];
+---
+
+<style>
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(180px, auto);
+  }
+  .grid-item {
+    position: relative;
+  }
+  .cover {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  .cover img{
+    height: 100%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+  .speaker-info {
+    position: absolute;
+    bottom: 0;
+    padding: .8rem;
+    background-color: rgba(0,0,0,.8);
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+  }
+  .speaker-info .speaker-name {
+    font-size: .9rem;
+  }
+  .speaker-info .speaker-title {
+    font-size: .7rem;
+  }
+</style>
+
+
+<div class="grid">
+  {SPEAKERS.map((item) => (
+    <div class="grid-item">
+      <div class="cover">
+        <img src={item.image} alt={item.name}>
+        <div class="speaker-info">
+          <p class="speaker-name">{item.name}</p>
+          <p class="speaker-title">{item.title}</p>
+        </div>
+      </div>
+
+    </div>
+  ))}
+</div>
