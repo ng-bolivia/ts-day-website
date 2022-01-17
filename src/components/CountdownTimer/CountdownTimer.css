@@ -1,0 +1,18 @@
+.CountdownTimer {
+  display: inline-flex;
+  flex-direction: column;
+  background-color: var(--color-blue-two);
+  margin-bottom: 1rem;
+  padding: .5rem .8rem .5rem .5rem;
+  border-radius: 8px;
+}
+.CountdownTimer .copy {
+  margin-bottom: .3rem;
+}
+.CountdownTimer .values {
+  display: flex;
+}
+
+.CountdownTimer .values div {
+  margin-right: .3rem;
+}

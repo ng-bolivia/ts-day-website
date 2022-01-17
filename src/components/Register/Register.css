@@ -1,0 +1,18 @@
+.register {
+  display: flex;
+}
+.register input {
+  border: 0;
+  padding: .5rem;
+  font-size: .8rem;
+  border-radius: 8px 0px 0px 8px;
+}
+.register button {
+  border: 0;
+  padding: .5rem .8rem;
+  background-color: var(--color-yellow);
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .8rem;
+  border-radius: 0px 8px 8px 0px;
+}

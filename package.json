@@ -6,9 +6,15 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "deploy": "npm run build && firebase deploy"
   },
   "devDependencies": {
+    "@types/react": "^17.0.38",
     "astro": "^0.22.11"
+  },
+  "dependencies": {
+    "@astrojs/renderer-react": "^0.4.1",
+    "@fortawesome/fontawesome-free": "^5.15.4"
   }
 }
