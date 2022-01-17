@@ -1,5 +1,5 @@
 interface ImportMetaEnv {
-  readonly MAILCHIMP_URL: string;
+  readonly PUBLIC_MAILCHIMP_URL: string;
 }
 
 interface ImportMeta {

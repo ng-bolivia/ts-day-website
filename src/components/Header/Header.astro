@@ -1,8 +1,28 @@
 ---
 import HeaderGallery from '../HeaderGallery/HeaderGallery.astro';
 import CountdownTimer from '../CountdownTimer/CountdownTimer.tsx';
-import Register from '../Register/Register.tsx';
+import HeaderRegister from '../HeaderRegister/HeaderRegister.tsx';
+import i18n from '../../data/i18n/sp.json';
 ---
+
+
+<header>
+  <div class="container">
+    <div class="content">
+      <h1>{i18n.Header_title}</h1>
+      <p><span class="material-icons">room</span> {i18n.Header_sub_title}</p>
+      <p>{i18n.Header_text}</p>
+      <CountdownTimer client:visible />
+      <HeaderRegister client:visible />
+    </div>
+    <div class="gallery">
+      <HeaderGallery />
+    </div>
+  </div>
+  <div class="wave"></div>
+</header>
+
+
 
 <style>
   header {
@@ -18,13 +38,14 @@ import Register from '../Register/Register.tsx';
     justify-content: space-between;
     width: 100%;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
   }
   .content {
     width: 100%;
-    margin-bottom: 4rem;
   }
   h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 700;
     color: white;
     margin-bottom: .5rem;
@@ -32,7 +53,7 @@ import Register from '../Register/Register.tsx';
   p {
     color: white;
     margin-bottom: 1rem;
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
   .gallery {
     width: 100%;
@@ -43,7 +64,8 @@ import Register from '../Register/Register.tsx';
     height: 70px;
     width: 100%;
     background: var(--color-blue-one);
-    bottom: 0;
+    z-index: -1;
+    bottom: -25px;
   }
 
   .wave::before, .wave::after {
@@ -77,6 +99,9 @@ import Register from '../Register/Register.tsx';
     header {
       height: 80vh;
     }
+    h1 {
+      font-size: 3rem;
+    }
     .container {
       flex-direction: row;
     }
@@ -84,7 +109,7 @@ import Register from '../Register/Register.tsx';
       width: 50%;
     }
     .gallery {
-      width: 40%;
+      width: 45%;
     }
   }
 
@@ -92,6 +117,9 @@ import Register from '../Register/Register.tsx';
   @media screen and (min-width: 64em) {
     header {
       height: 80vh;
+    }
+    h1 {
+      font-size: 3.5rem;
     }
     .container {
       flex-direction: row;
@@ -105,19 +133,3 @@ import Register from '../Register/Register.tsx';
   }
 
 </style>
-
-<header>
-  <div class="container">
-    <div class="content">
-      <h1>TypeScript Day</h1>
-      <p><i class="fas fa-calendar"></i> Febrero 19 2021, Evento Online.</p>
-      <p>Aprende sobre el lenguage que los cambio todo para JS de la mano de profesionales, 4 speakers, 5 lighttalks, sessión de networking, Gratis!</p>
-      <CountdownTimer client:visible />
-      <Register client:visible />
-    </div>
-    <div class="gallery">
-      <HeaderGallery />
-    </div>
-  </div>
-  <div class="wave"></div>
-</header>

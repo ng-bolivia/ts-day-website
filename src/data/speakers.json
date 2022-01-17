@@ -2,7 +2,37 @@
   {
     "id": "1",
     "name": "Luis",
-    "image": "/assets/images/luis.jpg",
+    "image": "/assets/images/luis.png",
+    "title": "MVP"
+  },
+  {
+    "id": "2",
+    "name": "Debbie",
+    "image": "/assets/images/debbie.png",
+    "title": "MVP"
+  },
+  {
+    "id": "3",
+    "name": "Debbie",
+    "image": "/assets/images/oscar.png",
+    "title": "MVP"
+  },
+  {
+    "id": "4",
+    "name": "Vanne",
+    "image": "/assets/images/vanne.png",
+    "title": "MVP"
+  },
+  {
+    "id": "5",
+    "name": "Nico",
+    "image": "/assets/images/nico.png",
+    "title": "MVP"
+  },
+  {
+    "id": "6",
+    "name": "she",
+    "image": "/assets/images/she.png",
     "title": "MVP"
   }
 ]
