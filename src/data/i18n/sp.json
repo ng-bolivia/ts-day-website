@@ -1,5 +1,15 @@
 {
   "Header_title": "TypeScript Day",
   "Header_sub_title": "Febrero 19 2021, Evento Online.",
-  "Header_text": "Aprende sobre el lenguage que los cambio todo para JS de la mano de profesionales, 4 speakers, 5 lighttalks, sessión de networking, Gratis!"
+  "Header_text": "Aprende sobre el lenguage que los cambio todo para JS de la mano de profesionales, 4 speakers, 5 lighttalks, sessión de networking, Gratis!",
+  "About_title": "Acerca del TypeScript Day",
+  "About_text": "Es un evento enfocado a Typescript.",
+  "About_question": "¿Este evento es para tí?",
+  "About_reason_1": "Lorem",
+  "About_reason_2": "Lorem",
+  "About_reason_3": "Lorem",
+  "About_reason_4": "Lorem",
+  "About_reason_5": "Lorem",
+  "Speakers_title": "Nuestros increibles speakers",
+  "Speakers_text": "Nuestros increibles speakers"
 }

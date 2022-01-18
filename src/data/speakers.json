@@ -3,36 +3,84 @@
     "id": "1",
     "name": "Luis",
     "image": "/assets/images/luis.png",
-    "title": "MVP"
+    "title": "MVP",
+    "company": "Freelance",
+    "isInBanner": true,
+    "links": [
+      {
+        "icon":"emoji_emotions",
+        "url": ""
+      }
+    ]
   },
   {
     "id": "2",
     "name": "Debbie",
     "image": "/assets/images/debbie.png",
-    "title": "MVP"
+    "title": "MVP",
+    "company": "Freelance",
+    "isInBanner": true,
+    "links": [
+      {
+        "icon":" ",
+        "url": ""
+      }
+    ]
   },
   {
     "id": "3",
     "name": "Debbie",
     "image": "/assets/images/oscar.png",
-    "title": "MVP"
+    "title": "MVP",
+    "company": "Freelance",
+    "isInBanner": true,
+    "links": [
+      {
+        "icon":" ",
+        "url": ""
+      }
+    ]
   },
   {
     "id": "4",
     "name": "Vanne",
     "image": "/assets/images/vanne.png",
-    "title": "MVP"
+    "title": "MVP",
+    "company": "Freelance",
+    "isInBanner": true,
+    "links": [
+      {
+        "icon":" ",
+        "url": ""
+      }
+    ]
   },
   {
     "id": "5",
     "name": "Nico",
     "image": "/assets/images/nico.png",
-    "title": "MVP"
+    "title": "MVP",
+    "company": "Freelance",
+    "isInBanner": true,
+    "links": [
+      {
+        "icon":" ",
+        "url": ""
+      }
+    ]
   },
   {
     "id": "6",
     "name": "she",
     "image": "/assets/images/she.png",
-    "title": "MVP"
+    "title": "MVP",
+    "company": "Freelance",
+    "isInBanner": true,
+    "links": [
+      {
+        "icon":" ",
+        "url": ""
+      }
+    ]
   }
 ]
