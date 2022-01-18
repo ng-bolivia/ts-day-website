@@ -19,7 +19,7 @@ body {
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: white;
+  color: black;
   overflow-x: hidden;
 }
 
@@ -27,6 +27,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
   color: #141c25;
   font-weight: 700;
+  margin-bottom: .5rem;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -37,5 +38,8 @@ h1, h2, h3, h4, h5, h6 {
 } */
 
 .container {
-
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 2rem;
 }

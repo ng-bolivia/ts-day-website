@@ -1,0 +1,52 @@
+---
+import i18n from '../../data/i18n/sp.json';
+---
+<section class="container">
+  <h2>Acerca del TypeScript Day</h2>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt dolor officiis repudiandae porro, dolores nemo quis, non sit voluptates placeat ipsam magni impedit modi recusandae dolorem. Quam sint dolores ipsa!</p>
+  <h2>¿Este evento es para tí?</h2>
+  <ul>
+    <li><span class="material-icons">check_circle</span> Uno</li>
+    <li><span class="material-icons">check_circle</span> Uno</li>
+    <li><span class="material-icons">check_circle</span> Uno</li>
+    <li><span class="material-icons">check_circle</span> Uno</li>
+  </ul>
+</section>
+
+<style>
+  section {
+    margin-top: 5rem;
+    text-align: center;
+  }
+  p {
+    margin-bottom: .5rem;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  ul li {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .material-icons {
+    margin-right: .5rem;
+    color: var(--color-blue-one);
+  }
+  /* Medium only */
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    section {
+      padding: 2rem 10rem;
+    }
+  }
+
+  /* Large and up */
+  @media screen and (min-width: 64em) {
+    section {
+      padding: 2rem 10rem;
+    }
+  }
+</style>
