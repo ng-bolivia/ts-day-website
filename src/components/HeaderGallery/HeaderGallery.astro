@@ -1,4 +1,5 @@
 ---
+import { Sprite } from 'astro-icon';
 import SPEAKERS from '../../data/speakers.json';
 ---
 
@@ -11,6 +12,9 @@ import SPEAKERS from '../../data/speakers.json';
           <p class="speaker-name">{item.name}</p>
           <p class="speaker-title">{item.title}</p>
         </div>
+      </div>
+      <div class="speaker-flag">
+        <Sprite name={item.flag} size={24}/>
       </div>
     </div>
   ))}
@@ -57,6 +61,11 @@ import SPEAKERS from '../../data/speakers.json';
   .speaker-info .speaker-title {
     font-size: .7rem;
   }
+  .speaker-flag {
+    position: absolute;
+    top: .2rem;
+    right: .2rem;
+  }
 
   /* Medium only */
   @media screen and (min-width: 40em) and (max-width: 63.9375em) {
@@ -74,7 +83,7 @@ import SPEAKERS from '../../data/speakers.json';
   @media screen and (min-width: 64em) {
     .grid {
       grid-template-columns: repeat(3, 1fr);
-      grid-auto-rows: minmax(190px, auto);
+      grid-auto-rows: minmax(200px, auto);
     }
   }
 </style>

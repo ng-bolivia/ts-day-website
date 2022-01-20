@@ -1,7 +1,9 @@
 {
   "Header_title": "TypeScript Day",
-  "Header_sub_title": "Febrero 19 2021, Evento Online.",
-  "Header_text": "Aprende sobre el lenguage que los cambio todo para JS de la mano de profesionales, 4 speakers, 5 lighttalks, sessión de networking, Gratis!",
+  "Header_sub_title": "Sábado 12 de febrero de 2022, Evento Online.",
+  "Header_text": "Aprende sobre el lenguaje que lo cambió todo para el ecosistema de JavaScript de la mano de expertos en el área junto a 6 speakers, 5 light talks y una sesión de networking y lo mejor de todo es ¡Gratis!",
+  "HeaderRegister_email_placeholder": "Digita tu correo aquí",
+  "HeaderRegister_button": "Registraté",
   "About_title": "Acerca del TypeScript Day",
   "About_text": "Es un evento enfocado a Typescript.",
   "About_question": "¿Este evento es para tí?",

@@ -8,7 +8,7 @@ const CountdownTimer = () => {
     minutes: 0,
     seconds: 0
   });
-  const dropDate = new Date(2022, 1, 19);
+  const dropDate = new Date(2022, 1, 12, 13);
   const dateToTimeStamp = new Date(dropDate).getTime() / 1000;
   const dropDateFormat = new Date(dateToTimeStamp * 1000).getTime();
 

@@ -1,15 +1,24 @@
 [
   {
     "id": "1",
-    "name": "Luis",
+    "name": "Luis Aviles",
     "image": "/assets/images/luis.png",
-    "title": "MVP",
-    "company": "Freelance",
+    "title": "Microsoft MVP ",
+    "company": "Senior Software Engineer at This Dot",
     "isInBanner": true,
+    "flag": "cif:bo",
     "links": [
       {
-        "icon":"emoji_emotions",
-        "url": ""
+        "icon":"fa:twitter",
+        "url": "https://twitter.com/luixaviles"
+      },
+      {
+        "icon":"fa:github",
+        "url": "https://twitter.com/luixaviles"
+      },
+      {
+        "icon":"fa:linkedin",
+        "url": "https://twitter.com/luixaviles"
       }
     ]
   },
@@ -19,6 +28,7 @@
     "image": "/assets/images/debbie.png",
     "title": "MVP",
     "company": "Freelance",
+    "flag": "cif:es",
     "isInBanner": true,
     "links": [
       {
@@ -33,6 +43,7 @@
     "image": "/assets/images/oscar.png",
     "title": "MVP",
     "company": "Freelance",
+    "flag": "cif:mx",
     "isInBanner": true,
     "links": [
       {
@@ -47,6 +58,7 @@
     "image": "/assets/images/vanne.png",
     "title": "MVP",
     "company": "Freelance",
+    "flag": "cif:ar",
     "isInBanner": true,
     "links": [
       {
@@ -57,15 +69,24 @@
   },
   {
     "id": "5",
-    "name": "Nico",
+    "name": "Nicolas Molina",
     "image": "/assets/images/nico.png",
-    "title": "MVP",
-    "company": "Freelance",
+    "title": "Google Dev Expert",
+    "company": "Frontend Senior at Platzi",
+    "flag": "cif:co",
     "isInBanner": true,
     "links": [
       {
-        "icon":" ",
-        "url": ""
+        "icon":"fa:twitter",
+        "url": "https://twitter.com/luixaviles"
+      },
+      {
+        "icon":"fa:github",
+        "url": "https://twitter.com/luixaviles"
+      },
+      {
+        "icon":"fa:linkedin",
+        "url": "https://twitter.com/luixaviles"
       }
     ]
   },
@@ -75,6 +96,7 @@
     "image": "/assets/images/she.png",
     "title": "MVP",
     "company": "Freelance",
+    "flag": "cif:bo",
     "isInBanner": true,
     "links": [
       {

@@ -1,4 +1,6 @@
 ---
+import { Sprite } from 'astro-icon';
+
 import HeaderGallery from '../HeaderGallery/HeaderGallery.astro';
 import CountdownTimer from '../CountdownTimer/CountdownTimer.tsx';
 import HeaderRegister from '../HeaderRegister/HeaderRegister.tsx';
@@ -10,7 +12,7 @@ import i18n from '../../data/i18n/sp.json';
   <div class="container">
     <div class="content">
       <h1>{i18n.Header_title}</h1>
-      <p><span class="material-icons">room</span> {i18n.Header_sub_title}</p>
+      <p><Sprite name="fa:map-marker" role="img" size={24}/> {i18n.Header_sub_title}</p>
       <p>{i18n.Header_text}</p>
       <CountdownTimer client:visible />
       <HeaderRegister client:visible />
@@ -50,6 +52,11 @@ import i18n from '../../data/i18n/sp.json';
     color: white;
     margin-bottom: 1rem;
     font-size: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  p [astro-icon] {
+    margin-right: .5rem;
   }
   .gallery {
     width: 100%;
@@ -84,10 +91,6 @@ import i18n from '../../data/i18n/sp.json';
     background-color: var(--color-blue-one);
     left: -1.5%;
     top: 40%;
-  }
-  .email-copy {
-    font-size: .8rem;
-    margin-top: .5rem;
   }
 
   /* Medium only */
@@ -124,7 +127,7 @@ import i18n from '../../data/i18n/sp.json';
       width: 50%;
     }
     .gallery {
-      width: 40%;
+      width: 44%;
     }
   }
 
