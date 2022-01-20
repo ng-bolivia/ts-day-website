@@ -1,0 +1,43 @@
+---
+import { Sprite } from 'astro-icon';
+import i18n from '../../data/i18n/sp.json';
+---
+<section class="container">
+  <h2>{i18n.Parthers_title}</h2>
+  <p>{i18n.Parthers_text}</p>
+  <div class="logos">
+    {i18n.Parthers_logos.map((item) => <a href={item.link} target="_blank"><img src={item.logo} alt="" /></a>)}
+  </div>
+</section>
+
+
+<style>
+  section {
+    margin-top: 3rem;
+    text-align: center;
+  }
+  p {
+    margin-bottom: 1rem;
+  }
+  .logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+  }
+  .logos img {
+    max-width: 100%;
+  }
+  /* Medium only */
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .container > p  {
+      padding: 0rem 10rem;
+    }
+  }
+
+  /* Large and up */
+  @media screen and (min-width: 64em) {
+    .container > p  {
+      padding: 0rem 10rem;
+    }
+  }
+</style>

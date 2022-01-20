@@ -1,4 +1,5 @@
 ---
+import { Sprite } from 'astro-icon';
 import i18n from '../../data/i18n/sp.json';
 ---
 <section class="container">
@@ -6,11 +7,7 @@ import i18n from '../../data/i18n/sp.json';
   <p>{i18n.About_text}</p>
   <h2>{i18n.About_question}</h2>
   <ul>
-    <li><span class="material-icons">check_circle</span> {i18n.About_reason_1}</li>
-    <li><span class="material-icons">check_circle</span> {i18n.About_reason_2}</li>
-    <li><span class="material-icons">check_circle</span> {i18n.About_reason_3}</li>
-    <li><span class="material-icons">check_circle</span> {i18n.About_reason_4}</li>
-    <li><span class="material-icons">check_circle</span> {i18n.About_reason_5}</li>
+    {i18n.About_reasons.map((item) => <li><Sprite name="fa:check" size={24}/> {item}</li>)}
   </ul>
 </section>
 
@@ -20,7 +17,7 @@ import i18n from '../../data/i18n/sp.json';
     text-align: center;
   }
   p {
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
   }
   ul {
     list-style: none;
@@ -32,8 +29,9 @@ import i18n from '../../data/i18n/sp.json';
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: .5rem;
   }
-  .material-icons {
+  li [astro-icon] {
     margin-right: .5rem;
     color: var(--color-blue-one);
   }

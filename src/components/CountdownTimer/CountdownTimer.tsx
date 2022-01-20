@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import './CountdownTimer.css';
+import i18n from '../../data/i18n/sp.json';
 
 const CountdownTimer = () => {
   const [timerString, setTimerString] = useState({
@@ -46,7 +47,7 @@ const CountdownTimer = () => {
   return (
     <>
       <div className="CountdownTimer">
-        <div className="copy">Registraté ahora y reserva tu cupo, el evento iniciará en:</div>
+        <div className="copy">{i18n.CountdownTimer_text}</div>
         {timerString && <div className="values">
           <div><strong>{timerString.days}</strong> Días</div>
           <div><strong>{timerString.hours}</strong> Horas</div>

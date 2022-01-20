@@ -30,12 +30,7 @@
     "company": "Freelance",
     "flag": "cif:es",
     "isInBanner": true,
-    "links": [
-      {
-        "icon":" ",
-        "url": ""
-      }
-    ]
+    "links": []
   },
   {
     "id": "3",
@@ -45,12 +40,7 @@
     "company": "Freelance",
     "flag": "cif:mx",
     "isInBanner": true,
-    "links": [
-      {
-        "icon":" ",
-        "url": ""
-      }
-    ]
+    "links": []
   },
   {
     "id": "4",
@@ -60,12 +50,7 @@
     "company": "Freelance",
     "flag": "cif:ar",
     "isInBanner": true,
-    "links": [
-      {
-        "icon":" ",
-        "url": ""
-      }
-    ]
+    "links": []
   },
   {
     "id": "5",
@@ -98,11 +83,6 @@
     "company": "Freelance",
     "flag": "cif:bo",
     "isInBanner": true,
-    "links": [
-      {
-        "icon":" ",
-        "url": ""
-      }
-    ]
+    "links": []
   }
 ]

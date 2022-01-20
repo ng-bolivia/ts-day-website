@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './HeaderRegister.css';
+import i18n from '../../data/i18n/sp.json';
 
 const MAILCHIMP_URL = import.meta.env.PUBLIC_MAILCHIMP_URL;
 const EMAIL_REGEX = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -19,7 +20,7 @@ const HeaderRegister = () => {
     const email = target.email.value;
     if (!EMAIL_REGEX.test(email)) {
       setStatus('error');
-      setMessage('Por favor registra una email valido!');
+      setMessage(i18n.HeaderRegister_email_invalid);
       setClassMessage(state => `${state} show`);
       return;
     }
@@ -30,11 +31,11 @@ const HeaderRegister = () => {
         mode: 'no-cors',
       });
       setStatus('success');
-      setMessage('Listo estas registrado en el evento!');
+      setMessage(i18n.HeaderRegister_email_success);
       setClassMessage(state => `${state} show`);
     } catch (error) {
       setStatus('error');
-      setMessage('Ups algo salio mal intentalo de nuevo, por favor!');
+      setMessage(i18n.HeaderRegister_email_error);
       setClassMessage(state => `${state} show`);
     }
   }
@@ -42,9 +43,9 @@ const HeaderRegister = () => {
   return (
     <div className='HeaderRegister'>
       <form onSubmit={handleSubmit} noValidate>
-        <input name='email' type="email" placeholder="Tu correo" />
+        <input name='email' type="email" placeholder={i18n.HeaderRegister_email_placeholder} />
         <button type='submit' disabled={status === 'loading'}>
-          {status !== 'loading' && <span>Registraté</span>}
+          {status !== 'loading' && <span>{i18n.HeaderRegister_button}</span>}
           {status === 'loading' && <span className="material-icons">sync</span>}
         </button>
       </form>
