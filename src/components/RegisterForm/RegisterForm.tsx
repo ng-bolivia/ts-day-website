@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import './HeaderRegister.css';
-import i18n from '../../data/i18n/sp.json';
+import './RegisterForm.css';
+import data from '../../data/data.json';
 
 const MAILCHIMP_URL = import.meta.env.PUBLIC_MAILCHIMP_URL;
 const EMAIL_REGEX = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-const HeaderRegister = () => {
+const RegisterForm = () => {
 
   const [status, setStatus] = useState('init');
   const [message, setMessage] = useState('..');
@@ -20,7 +20,7 @@ const HeaderRegister = () => {
     const email = target.email.value;
     if (!EMAIL_REGEX.test(email)) {
       setStatus('error');
-      setMessage(i18n.HeaderRegister_email_invalid);
+      setMessage(data.RegisterForm.emailInvalid);
       setClassMessage(state => `${state} show`);
       return;
     }
@@ -31,21 +31,21 @@ const HeaderRegister = () => {
         mode: 'no-cors',
       });
       setStatus('success');
-      setMessage(i18n.HeaderRegister_email_success);
+      setMessage(data.RegisterForm.emailSuccess);
       setClassMessage(state => `${state} show`);
     } catch (error) {
       setStatus('error');
-      setMessage(i18n.HeaderRegister_email_error);
+      setMessage(data.RegisterForm.emailError);
       setClassMessage(state => `${state} show`);
     }
   }
 
   return (
-    <div className='HeaderRegister'>
+    <div className='RegisterForm'>
       <form onSubmit={handleSubmit} noValidate>
-        <input name='email' type="email" placeholder={i18n.HeaderRegister_email_placeholder} />
+        <input name='email' type="email" placeholder={data.RegisterForm.emailPlaceholder} />
         <button type='submit' disabled={status === 'loading'}>
-          {status !== 'loading' && <span>{i18n.HeaderRegister_button}</span>}
+          {status !== 'loading' && <span>{data.RegisterForm.button}</span>}
           {status === 'loading' && <span className="material-icons">sync</span>}
         </button>
       </form>
@@ -55,4 +55,4 @@ const HeaderRegister = () => {
 };
 
 
-export default HeaderRegister;
+export default RegisterForm;

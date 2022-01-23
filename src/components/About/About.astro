@@ -1,24 +1,19 @@
 ---
 import { Sprite } from 'astro-icon';
-import i18n from '../../data/i18n/sp.json';
+import data from '../../data/data.json';
 ---
-<section class="container">
-  <h2>{i18n.About_title}</h2>
-  <p>{i18n.About_text}</p>
-  <h2>{i18n.About_question}</h2>
-  <ul>
-    {i18n.About_reasons.map((item) => <li><Sprite name="fa:check" size={24}/> {item}</li>)}
-  </ul>
+<section class="section">
+  <div class="container">
+    <h2>{data.About.title}</h2>
+    <p>{data.About.text}</p>
+    <h2>{data.About.question}</h2>
+    <ul>
+      {data.About.reasons.map((item) => <li><Sprite name="fa:check" size={24}/> {item}</li>)}
+    </ul>
+  </div>
 </section>
 
 <style>
-  section {
-    margin-top: 5rem;
-    text-align: center;
-  }
-  p {
-    margin-bottom: 1rem;
-  }
   ul {
     list-style: none;
     margin: 0;
@@ -34,18 +29,5 @@ import i18n from '../../data/i18n/sp.json';
   li [astro-icon] {
     margin-right: .5rem;
     color: var(--color-blue-one);
-  }
-  /* Medium only */
-  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-    section {
-      padding: 2rem 10rem;
-    }
-  }
-
-  /* Large and up */
-  @media screen and (min-width: 64em) {
-    section {
-      padding: 2rem 10rem;
-    }
   }
 </style>

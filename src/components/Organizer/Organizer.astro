@@ -1,27 +1,20 @@
 ---
-import { Sprite } from 'astro-icon';
-import i18n from '../../data/i18n/sp.json';
+import data from '../../data/data.json';
 ---
-<div class="OrganizerSection">
+<section class="section section-with-bc">
   <section class="container">
-    <h2>{i18n.Organizer_title}</h2>
-    <p>{i18n.Organizer_text}</p>
+    <h2>{data.Organizer.title}</h2>
+    <p>{data.Organizer.text}</p>
     <div class="grid">
-      {i18n.Organizer_videos.map((item) => <iframe width="100%" height="100%" src={item} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)}
+      {data.Organizer.videos.map((item) => <iframe width="100%" height="100%" src={item} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)}
     </div>
   </section>
-</div>
+</section>
 
 
 <style>
-  .OrganizerSection {
-    background-color: var(--color-blue-one);
-    color: white;
-  }
-  section {
-    margin-top: 5rem;
-    text-align: center;
-    padding: 5rem 0;
+  .section {
+    padding: 5rem 2rem;
   }
   h2 {
     color: white;

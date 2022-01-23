@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import './CountdownTimer.css';
-import i18n from '../../data/i18n/sp.json';
 
 const CountdownTimer = () => {
   const [timerString, setTimerString] = useState({
@@ -9,7 +8,7 @@ const CountdownTimer = () => {
     minutes: 0,
     seconds: 0
   });
-  const dropDate = new Date(2022, 1, 12, 13);
+  const dropDate = new Date(2022, 1, 19, 13);
   const dateToTimeStamp = new Date(dropDate).getTime() / 1000;
   const dropDateFormat = new Date(dateToTimeStamp * 1000).getTime();
 
@@ -47,7 +46,6 @@ const CountdownTimer = () => {
   return (
     <>
       <div className="CountdownTimer">
-        <div className="copy">{i18n.CountdownTimer_text}</div>
         {timerString && <div className="values">
           <div><strong>{timerString.days}</strong> Días</div>
           <div><strong>{timerString.hours}</strong> Horas</div>

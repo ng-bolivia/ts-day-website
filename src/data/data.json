@@ -1,39 +1,39 @@
 {
-  "dateEvent": "2022-02-12",
   "Header": {
     "title": "TypeScript Day",
-    "subTitle": "Sábado 12 de febrero de 2022, Evento Online.",
-    "text": "Aprende sobre el lenguaje que lo cambió todo para el ecosistema de JavaScript de la mano de expertos en el área junto a 6 speakers, 5 light talks y una sesión de networking y lo mejor de todo es ¡Gratis!"
+    "subTitle": "Sábado 19 de febrero de 2022, Evento Online.",
+    "text": "Aprende sobre el lenguaje que cambió todo para el ecosistema de JavaScript, de la mano de expertos en el área en esta conferencia tendremos: <strong>6 speakers, 5 light talks y una sesión de networking</strong> y lo mejor de todo es ¡Gratis!!",
+    "countdownText": "Registraté ahora y reserva tu cupo, el evento iniciará en:"
   },
-  "HeaderRegister": {
+  "RegisterForm": {
     "emailPlaceholder": "Digita tu correo aquí",
     "emailError": "Ups algo salio mal intentalo de nuevo, por favor!",
-    "emailSucess": "Listo estas registrado en el evento!",
+    "emailSuccess": "Listo estas registrado en el evento!",
     "emailInvalid": "Por favor registra una email valido!",
     "button": "Registraté"
   },
-  "CountdownTimer": {
-    "text": "Registraté ahora y reserva tu cupo, el evento iniciará en:"
-  },
   "About": {
     "title": "¿Qué es el TypeScript Day?",
-    "text": "El TypeScript Day en un evento online enfocado a temas de TypeScript y su ecosistema de la mano de expertos este día aprenderás cómo funciona este lenguaje, ventajas y como implementandolo puedes llegar a <a href='' target='_blank'>reducir el 60% de bugs</a> en tus sistemas.",
+    "text": "El TypeScript Day es un evento online enfocado a temas de TypeScript y su ecosistema, de la mano de expertos. En este día aprenderás cómo funciona este lenguaje tanto como sus ventajas y ¿cómo lo puedes implementar? ¿Cómo puedes llegar a reducir el porcentaje de bugs en tus sistemas? ",
     "question": "¿A quién va dirigido?",
     "reasons": [
-      "Cualquier persona entusiasta de la tecnología y con ganas de aprender.",
-      "Profesionales con experiencia en desarrollo de software.",
-      "Para ti, si tú que estás leyendo esto, este evento es para ti."
+      "Para ti, si tú que estás leyendo esto, este evento es para ti.",
+      "Cualquier persona entusiasta de la tecnología con ganas de aprender.",
+      "Profesionales con experiencia en desarrollo de software."
     ]
+  },
+  "Register": {
+    "title": "Registraté ahora",
+    "text": "Registrate al evento solo con tu correo electrónico y recibirás los detalles de la conferencia, esperamos verte el Sábado 19 de febrero de 2022 y que hagas parte de este gran evento online, recuerda el evento inicia en:"
   },
   "Speakers": {
     "title": "Aprende de la mano de expertos.",
-    "text": "Conoce a nuestros speakers quienes tienen un gran recorrido y nos van a compartir valioso conocimiento en este increíble evento.",
+    "text": "Conoce a nuestros speakers, quienes tienen un gran recorrido y nos van a compartir valioso conocimiento en este increíble evento.",
     "data": [
       {
-        "id": "1",
         "name": "Luis Aviles",
         "image": "/assets/images/luis.png",
-        "title": "Microsoft MVP ",
+        "title": "Microsoft MVP",
         "company": "Senior Software Engineer at This Dot",
         "isInBanner": true,
         "flag": "cif:bo",
@@ -44,118 +44,107 @@
           },
           {
             "icon":"fa:github",
-            "url": "https://twitter.com/luixaviles"
+            "url": "https://github.com/luixaviles"
           },
           {
             "icon":"fa:linkedin",
-            "url": "https://twitter.com/luixaviles"
+            "url": "https://co.linkedin.com/in/luixaviles"
           }
         ]
       },
       {
-        "id": "2",
-        "name": "Debbie",
-        "image": "/assets/images/debbie.png",
-        "title": "MVP",
-        "company": "Freelance",
-        "flag": "cif:es",
-        "isInBanner": true,
-        "links": []
-      },
-      {
-        "id": "3",
-        "name": "Debbie",
-        "image": "/assets/images/oscar.png",
-        "title": "MVP",
-        "company": "Freelance",
-        "flag": "cif:mx",
-        "isInBanner": true,
-        "links": []
-      },
-      {
-        "id": "4",
-        "name": "Vanne",
-        "image": "/assets/images/vanne.png",
-        "title": "MVP",
-        "company": "Freelance",
-        "flag": "cif:ar",
-        "isInBanner": true,
-        "links": []
-      },
-      {
-        "id": "5",
         "name": "Nicolas Molina",
         "image": "/assets/images/nico.png",
         "title": "Google Dev Expert",
-        "company": "Frontend Senior at Platzi",
+        "company": "Frontend Senior & Teacher at Platzi",
         "flag": "cif:co",
         "isInBanner": true,
         "links": [
           {
             "icon":"fa:twitter",
-            "url": "https://twitter.com/luixaviles"
-          },
-          {
-            "icon":"fa:github",
-            "url": "https://twitter.com/luixaviles"
+            "url": "https://twitter.com/nicobytes"
           },
           {
             "icon":"fa:linkedin",
-            "url": "https://twitter.com/luixaviles"
+            "url": "https://co.linkedin.com/in/nicobytes"
+          },
+          {
+            "icon":"fa:youtube",
+            "url": "https://www.youtube.com/c/nicobytes"
           }
         ]
       },
       {
-        "id": "6",
-        "name": "she",
-        "image": "/assets/images/she.png",
-        "title": "MVP",
-        "company": "Freelance",
-        "flag": "cif:bo",
+        "name": "Oscar Barajas",
+        "image": "/assets/images/oscar.png",
+        "title": "Microsoft MVP",
+        "company": "Fondation Layer & Teacher at Platzi",
+        "flag": "cif:mx",
         "isInBanner": true,
-        "links": []
+        "links": [
+          {
+            "icon":"fa:twitter",
+            "url": "https://twitter.com/gndx"
+          },
+          {
+            "icon":"fa:github",
+            "url": "https://github.com/gndx"
+          },
+          {
+            "icon":"fa:youtube",
+            "url": "https://www.youtube.com/channel/UCw05fUBPwmpu-ehXFMqfdMw"
+          }
+        ]
       }
     ]
   },
   "Organizer": {
     "title": "Nuestros anteriores eventos",
-    "text": "Este evento es organizado por la reconocida comunidad Angular Bolivia la cual ya ha hecho eventos presenciales como el ngConf y virtuales, puedes mirar nuestros resultados en los siguientes videos.",
+    "text": "Este evento es organizado por la reconocida comunidad Angular Bolivia. La comunidad ha dirigido varios eventos presenciales como ngConf y otros eventos virtuales, puedes mirar nuestros resultados en los siguientes videos:",
     "videos": [
       "https://www.youtube.com/embed/VEnNx7lT1to",
       "https://www.youtube.com/embed/Awok8ALyEvE",
       "https://www.youtube.com/embed/kmjAu7VqT1s"
     ]
   },
-  "Parthers_title": "Patrocinadores y comunidades aliadas",
-  "Parthers_text": "Este evento también tiene el apoyo de comunidades en toda la región y les agradecemos por apoyarnos en este evento.",
-  "Parthers_logos": [
-    {
-      "logo": "/assets/images/logo-1.svg",
-      "link": "https://www.youtube.com/embed/kmjAu7VqT1s"
-    },
-    {
-      "logo": "/assets/images/logo-2.svg",
-      "link": "https://www.youtube.com/embed/kmjAu7VqT1s"
-    },
-    {
-      "logo": "/assets/images/logo-3.svg",
-      "link": "https://www.youtube.com/embed/kmjAu7VqT1s"
-    }
-  ],
-  "Footer_social": [
-    {
-      "icon": "/assets/images/logo-1.svg",
-      "link": "https://www.youtube.com/embed/kmjAu7VqT1s"
-    },
-    {
-      "icon": "/assets/images/logo-2.svg",
-      "link": "https://www.youtube.com/embed/kmjAu7VqT1s"
-    },
-    {
-      "icon": "/assets/images/logo-3.svg",
-      "link": "https://www.youtube.com/embed/kmjAu7VqT1s"
-    }
-  ],
-  "Footer_code": "Hecho con por Angular Bolivia",
-  "Footer_text": "Hecho con por Angular Bolivia"
+  "Parthers": {
+    "title": "Patrocinadores y comunidades aliadas",
+    "text": "Este evento tiene el apoyo de varias comunidades en toda la región y les agradecemos por ayudarnos a realizar este evento.",
+    "logos": [
+      {
+        "logo": "/assets/images/logo-1.svg",
+        "link": "https://www.youtube.com/embed/kmjAu7VqT1s"
+      },
+      {
+        "logo": "/assets/images/logo-2.svg",
+        "link": "https://www.youtube.com/embed/kmjAu7VqT1s"
+      },
+      {
+        "logo": "/assets/images/logo-3.svg",
+        "link": "https://www.youtube.com/embed/kmjAu7VqT1s"
+      }
+    ]
+  },
+  "Footer": {
+    "text": "Hecho con ❤️ por Angular Bolivia",
+    "code": "Código de conducta",
+    "socialLinks": [
+      {
+        "icon":"fa:twitter",
+        "url": "https://twitter.com/luixaviles"
+      },
+      {
+        "icon":"fa:github",
+        "url": "https://twitter.com/luixaviles"
+      },
+      {
+        "icon":"fa:linkedin",
+        "url": "https://twitter.com/luixaviles"
+      }
+    ]
+  },
+  "Schedule": {
+    "title": "Agenda",
+    "text": "Muy pronto tendrás los detalles de las conferencias y el horario."
+  }
 }

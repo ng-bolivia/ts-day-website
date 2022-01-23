@@ -1,21 +1,23 @@
 ---
 import { Sprite } from 'astro-icon';
-
 import HeaderGallery from '../HeaderGallery/HeaderGallery.astro';
 import CountdownTimer from '../CountdownTimer/CountdownTimer.tsx';
-import HeaderRegister from '../HeaderRegister/HeaderRegister.tsx';
-import i18n from '../../data/i18n/sp.json';
+import RegisterForm from '../RegisterForm/RegisterForm.tsx';
+import data from '../../data/data.json';
 ---
 
 
 <header>
   <div class="container">
     <div class="content">
-      <h1>{i18n.Header_title}</h1>
-      <p><Sprite name="fa:map-marker" role="img" size={24}/> {i18n.Header_sub_title}</p>
-      <p>{i18n.Header_text}</p>
-      <CountdownTimer client:visible />
-      <HeaderRegister client:visible />
+      <h1>{data.Header.title}</h1>
+      <p><Sprite name="fa:map-marker" role="img" size={24}/> {data.Header.subTitle}</p>
+      <p>{data.Header.text}</p>
+      <div class="countdown">
+        <p>{data.Header.countdownText}</p>
+        <CountdownTimer client:visible />
+      </div>
+      <RegisterForm client:visible />
     </div>
     <div class="gallery">
       <HeaderGallery />
@@ -52,8 +54,6 @@ import i18n from '../../data/i18n/sp.json';
     color: white;
     margin-bottom: 1rem;
     font-size: 1rem;
-    display: flex;
-    align-items: center;
   }
   p [astro-icon] {
     margin-right: .5rem;
@@ -61,7 +61,16 @@ import i18n from '../../data/i18n/sp.json';
   .gallery {
     width: 100%;
   }
-
+  .countdown {
+    background-color: var(--color-blue-two);
+    padding: 1rem;
+    border-radius: 8px;
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+  .countdown > p {
+    margin-bottom: 0;
+  }
   .wave {
     position: absolute;
     height: 70px;
@@ -82,8 +91,8 @@ import i18n from '../../data/i18n/sp.json';
     width: 55%;
     height: 109%;
     background-color: #fff;
-    right: -1.5%;
-    top: 60%;
+    right: 0;
+    top: 66%;
   }
   .wave::after {
     width: 55%;

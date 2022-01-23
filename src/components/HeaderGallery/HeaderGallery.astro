@@ -1,10 +1,10 @@
 ---
 import { Sprite } from 'astro-icon';
-import SPEAKERS from '../../data/speakers.json';
+import data from '../../data/data.json';
 ---
 
 <div class="grid">
-  {SPEAKERS.map(item => (
+  {data.Speakers.data.map(item => (
     <div class="grid-item">
       <div class="cover">
         <img src={item.image} alt={item.name} />
@@ -53,7 +53,7 @@ import SPEAKERS from '../../data/speakers.json';
     width: 100%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
-    color: var(--color-blue-one);
+    color: white;
   }
   .speaker-info .speaker-name {
     font-size: .9rem;

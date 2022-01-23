@@ -1,22 +1,44 @@
 ---
 import { Sprite } from 'astro-icon';
-import i18n from '../../data/i18n/sp.json';
+import data from '../../data/data.json';
 ---
-<div class="FooterSection">
-  <section class="container">
-    <h2>{i18n.Organizer_title}</h2>
-    <p>{i18n.Organizer_text}</p>
-    <div class="grid">
-      {i18n.Organizer_videos.map((item) => <iframe width="100%" height="100%" src={item} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>)}
-    </div>
-  </section>
-</div>
+<section class="section section-with-bc">
+  <div class="container">
+    <ul class="social-media">
+      {data.Footer.socialLinks.map(link => (
+        <li>
+          <a href={link.url} target="_blank">
+            <Sprite name={link.icon} role="img" size={24}/>
+          </a>
+        </li>
+      ))}
+    </ul>
+    <p><a href="" class="code">{data.Footer.code}</a></p>
+    <p>{data.Footer.text}</p>
+
+  </div>
+</section>
 
 
 <style>
-  section {
-    margin-top: 3rem;
-    text-align: center;
-    padding: 0 3rem;
+  .social-media {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+  .social-media a {
+    color: white;
+    text-decoration: none;
+    margin: 0 .5rem;
+  }
+  a.code {
+    color: white;
+    text-decoration: underline;
+  }
+  p{
+    margin-bottom: .3rem;
   }
 </style>
