@@ -1,5 +1,8 @@
 ---
 import data from '../../data/data.json';
+
+const url = Astro.request;
+const image = `${url.canonicalURL.href}assets/images/social-share.pn`;
 ---
 
 <meta http-equiv="x-ua-compatible" content="ie=edge" />
@@ -11,7 +14,7 @@ import data from '../../data/data.json';
  <!-- Facebook -->
 <meta property="og:title" content={data.MetaTags.title}>
 <meta property="og:description" content={data.MetaTags.description}>
-<meta property="og:image" content="/assets/images/social-share.png">
+<meta property="og:image" content={image}>
 <meta property="og:image:type" content="image/png">
 <meta property="og:url" content="https://tsday.ng-bolivia.org/">
 <meta property="og:site_name" content="Angular Performance Week" />
@@ -23,5 +26,5 @@ import data from '../../data/data.json';
 <meta name="twitter:site" content="@angularBolivia" />
 <meta name="twitter:creator" content="@angularBolivia" />
 <meta name="twitter:description" content={data.MetaTags.description}>
-<meta name="twitter:image" content="/assets/images/social-share.png">
+<meta name="twitter:image" content={image}>
 <meta name="twitter:card" content="summary">
