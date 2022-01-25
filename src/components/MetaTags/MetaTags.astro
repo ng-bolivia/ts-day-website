@@ -2,7 +2,8 @@
 import data from '../../data/data.json';
 
 const url = Astro.request;
-const image = `${url.canonicalURL.href}assets/images/social-share.png`;
+const imageFB = `${url.canonicalURL.href}assets/images/image-fb.png`;
+const imageTwitter = `${url.canonicalURL.href}assets/images/image-twitter.png`;
 ---
 
 <meta http-equiv="x-ua-compatible" content="ie=edge" />
@@ -14,7 +15,7 @@ const image = `${url.canonicalURL.href}assets/images/social-share.png`;
  <!-- Facebook -->
 <meta property="og:title" content={data.MetaTags.title}>
 <meta property="og:description" content={data.MetaTags.description}>
-<meta property="og:image" content={image}>
+<meta property="og:image" content={imageFB}>
 <meta property="og:image:type" content="image/png">
 <meta property="og:url" content="https://tsday.ng-bolivia.org/">
 <meta property="og:site_name" content="Angular Performance Week" />
@@ -26,5 +27,5 @@ const image = `${url.canonicalURL.href}assets/images/social-share.png`;
 <meta name="twitter:site" content="@angularBolivia" />
 <meta name="twitter:creator" content="@angularBolivia" />
 <meta name="twitter:description" content={data.MetaTags.description}>
-<meta name="twitter:image" content={image}>
+<meta name="twitter:image" content={imageTwitter}>
 <meta name="twitter:card" content="summary">
