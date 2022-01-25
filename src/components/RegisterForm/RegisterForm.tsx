@@ -46,7 +46,7 @@ const RegisterForm = () => {
         <input name='email' type="email" placeholder={data.RegisterForm.emailPlaceholder} />
         <button type='submit' disabled={status === 'loading'}>
           {status !== 'loading' && <span>{data.RegisterForm.button}</span>}
-          {status === 'loading' && <span className="material-icons">sync</span>}
+          {status === 'loading' && <span>...</span>}
         </button>
       </form>
       <p className={classMessage}>{message}</p>
