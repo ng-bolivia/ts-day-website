@@ -1,0 +1,27 @@
+---
+import data from '../../data/data.json';
+---
+
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="author" content="NG Bolivia" />
+<meta name="description" content={data.MetaTags.description} />
+<meta name="keywords" content={data.MetaTags.keywords} />
+
+ <!-- Facebook -->
+<meta property="og:title" content={data.MetaTags.title}>
+<meta property="og:description" content={data.MetaTags.description}>
+<meta property="og:image" content="/assets/images/social-share.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:url" content="https://tsday.ng-bolivia.org/">
+<meta property="og:site_name" content="Angular Performance Week" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="es_BO" />
+
+<!-- Twitter -->
+<meta name="twitter:title" content={data.MetaTags.title}>
+<meta name="twitter:site" content="@angularBolivia" />
+<meta name="twitter:creator" content="@angularBolivia" />
+<meta name="twitter:description" content={data.MetaTags.description}>
+<meta name="twitter:image" content="/assets/images/social-share.png">
+<meta name="twitter:card" content="summary">

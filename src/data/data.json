@@ -95,6 +95,24 @@
             "url": "https://www.youtube.com/channel/UCw05fUBPwmpu-ehXFMqfdMw"
           }
         ]
+      },
+      {
+        "name": "Lizzy Mendivil",
+        "image": "/assets/images/lizzymendivil.jpg",
+        "title": "Community Organizer",
+        "company": "Software Developer at JalaSoft",
+        "flag": "cif:bo",
+        "isInBanner": true,
+        "links": [
+          {
+            "icon":"fa:twitter",
+            "url": "https://twitter.com/lizzymendivil"
+          },
+          {
+            "icon":"fa:github",
+            "url": "https://github.com/lizzymendivil"
+          }
+        ]
       }
     ]
   },
@@ -131,20 +149,29 @@
     "socialLinks": [
       {
         "icon":"fa:twitter",
-        "url": "https://twitter.com/luixaviles"
+        "url": "https://twitter.com/angularbolivia"
       },
       {
-        "icon":"fa:github",
-        "url": "https://twitter.com/luixaviles"
+        "icon":"fa:facebook",
+        "url": "https://www.facebook.com/angular.bolivia"
       },
       {
-        "icon":"fa:linkedin",
-        "url": "https://twitter.com/luixaviles"
+        "icon":"fa:instagram",
+        "url": "https://www.instagram.com/angular.bolivia/"
+      },
+      {
+        "icon":"fa:youtube",
+        "url": "https://www.youtube.com/channel/UCkTe6tbnU9GhQ2VjpPBtgsw"
       }
     ]
   },
   "Schedule": {
     "title": "Agenda",
     "text": "Muy pronto tendrás los detalles de las conferencias y el horario."
+  },
+  "MetaTags": {
+    "title": "TypeScript Day",
+    "description": "Sábado 19 de febrero de 2022, Evento Online, aprende sobre el lenguaje que cambió todo para el ecosistema de JavaScript, de la mano de expertos en el área y lo mejor de todo es ¡Gratis!!",
+    "keywords": "Angular, ng, pwa, performance, conferencia, Bolivia, typescript"
   }
 }
