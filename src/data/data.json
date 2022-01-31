@@ -2,7 +2,7 @@
   "Header": {
     "title": "TypeScript Day",
     "subTitle": "Sábado 19 de febrero de 2022, Evento Online.",
-    "text": "Aprende sobre el lenguaje que cambió todo para el ecosistema de JavaScript, de la mano de expertos en el área en esta conferencia tendremos: <strong>6 speakers, 5 light talks y una sesión de networking</strong> y lo mejor de todo es ¡Gratis!!",
+    "text": "Aprende sobre el lenguaje que cambió todo para el ecosistema de JavaScript, de la mano de expertos en el área en esta conferencia tendremos: <strong>9 speakers y una sesión de networking</strong> y lo mejor de todo es ¡Gratis!!",
     "countdownText": "Registraté ahora y reserva tu cupo, el evento iniciará en:"
   },
   "RegisterForm": {
@@ -31,9 +31,27 @@
     "text": "Conoce a nuestros speakers, quienes tienen un gran recorrido y nos van a compartir valioso conocimiento en este increíble evento.",
     "data": [
       {
+        "name": "Lupe Maydana",
+        "image": "/assets/images/lupe.jpg",
+        "title": "Frontend Elite Engineer at Microsoft",
+        "company": "Frontend Elite Engineer at Microsoft",
+        "flag": "cif:bo",
+        "isInBanner": true,
+        "links": [
+          {
+            "icon":"fa:twitter",
+            "url": "https://twitter.com/luucamay_"
+          },
+          {
+            "icon":"fa:linkedin",
+            "url": "https://www.linkedin.com/in/luucamay/"
+          }
+        ]
+      },
+      {
         "name": "Luis Aviles",
         "image": "/assets/images/luis.png",
-        "title": "Microsoft MVP",
+        "title": "Microsoft MVP & Google Dev Expert",
         "company": "Senior Software Engineer at This Dot",
         "isInBanner": true,
         "flag": "cif:bo",
@@ -53,31 +71,28 @@
         ]
       },
       {
-        "name": "Nicolas Molina",
-        "image": "/assets/images/nico.png",
-        "title": "Google Dev Expert",
-        "company": "Frontend Senior & Teacher at Platzi",
-        "flag": "cif:co",
+        "name": "Dani Meneses",
+        "image": "/assets/images/dmeneses.jpg",
+        "title": "Software Developer at JalaSoft",
+        "company": "Software Developer at JalaSoft",
+        "flag": "cif:bo",
         "isInBanner": true,
         "links": [
           {
             "icon":"fa:twitter",
-            "url": "https://twitter.com/nicobytes"
+            "url": "https://twitter.com/DAN_11290"
           },
           {
-            "icon":"fa:linkedin",
-            "url": "https://co.linkedin.com/in/nicobytes"
-          },
-          {
-            "icon":"fa:youtube",
-            "url": "https://www.youtube.com/c/nicobytes"
+            "icon":"fa:github",
+            "url": "https://github.com/dmenesesl"
           }
         ]
       },
+
       {
         "name": "Oscar Barajas",
         "image": "/assets/images/oscar.png",
-        "title": "Microsoft MVP",
+        "title": "Microsoft MVP & Teacher at Platzi",
         "company": "Fondation Layer & Teacher at Platzi",
         "flag": "cif:mx",
         "isInBanner": true,
@@ -99,8 +114,8 @@
       {
         "name": "Lizzy Mendivil",
         "image": "/assets/images/lizzymendivil.jpg",
-        "title": "Community Organizer",
-        "company": "Software Developer at JalaSoft",
+        "title": "Software Developer at JalaSoft",
+        "company": "Software Developer at JalaSoft and Community Organizer",
         "flag": "cif:bo",
         "isInBanner": true,
         "links": [
@@ -111,6 +126,28 @@
           {
             "icon":"fa:github",
             "url": "https://github.com/lizzymendivil"
+          }
+        ]
+      },
+      {
+        "name": "Nicolas Molina",
+        "image": "/assets/images/nico.png",
+        "title": "Google Dev Expert & Teacher at Platzi",
+        "company": "Frontend Senior & Teacher at Platzi",
+        "flag": "cif:co",
+        "isInBanner": true,
+        "links": [
+          {
+            "icon":"fa:twitter",
+            "url": "https://twitter.com/nicobytes"
+          },
+          {
+            "icon":"fa:linkedin",
+            "url": "https://co.linkedin.com/in/nicobytes"
+          },
+          {
+            "icon":"fa:youtube",
+            "url": "https://www.youtube.com/c/nicobytes"
           }
         ]
       }
@@ -130,16 +167,8 @@
     "text": "Este evento tiene el apoyo de empresas y comunidades en toda la región y les agradecemos por ayudarnos a realizar este evento.",
     "logos": [
       {
-        "logo": "/assets/images/logo-1.svg",
-        "link": "https://www.youtube.com/embed/kmjAu7VqT1s"
-      },
-      {
-        "logo": "/assets/images/logo-2.svg",
-        "link": "https://www.youtube.com/embed/kmjAu7VqT1s"
-      },
-      {
-        "logo": "/assets/images/logo-3.svg",
-        "link": "https://www.youtube.com/embed/kmjAu7VqT1s"
+        "logo": "/assets/images/platzi.png",
+        "link": "https://platzi.com"
       }
     ]
   },
