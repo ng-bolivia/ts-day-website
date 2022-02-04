@@ -7,16 +7,16 @@ const speakers = data.Speakers.data.filter(item => item.isInBanner)
   {speakers.map(item => (
     <div class="grid-item">
       <div class="cover">
-        <img src={item.image} alt={item.name} />
+        <picture>
+          <source srcset={item.imageWebp} />
+          <source srcset={item.image} />
+          <img loading="lazy" src={item.image} alt={item.name} />
+        </picture>
         <div class="speaker-info">
           <p class="speaker-name">{item.name}</p>
           <p class="speaker-title">{item.title}</p>
         </div>
       </div>
-      <!-- <div class="speaker-flag">
-        <Sprite name={item.flag} size={24}/>
-      </div>
-      -->
     </div>
   ))}
 </div>

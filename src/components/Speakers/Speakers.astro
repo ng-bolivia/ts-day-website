@@ -10,9 +10,11 @@ import data from '../../data/data.json';
     <div class="grid">
       {data.Speakers.data.map(item => (
         <div class="grid-item">
-          <figure>
-            <img src={item.image} alt={item.name} />
-          </figure>
+          <picture>
+            <source srcset={item.imageWebp} />
+            <source srcset={item.image} />
+            <img loading="lazy" src={item.image} alt={item.name} />
+          </picture>
           <div class="speaker-info">
             <h3 class="speaker-name">{item.name} <Sprite name={item.flag} size={24}/></h3>
             <p>{item.title}</p>

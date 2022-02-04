@@ -2,19 +2,25 @@
   "name": "@example/starter",
   "version": "0.0.1",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "deploy": "npm run build && firebase deploy"
+    "deploy": "npm run build && firebase deploy",
+    "imagemin": "node imagemin.js"
   },
   "devDependencies": {
     "@astrojs/renderer-react": "0.4.1",
     "@types/react": "17.0.38",
     "astro": "0.22.11",
     "astro-icon": "0.5.3",
-    "autoprefixer": "10.4.2"
+    "autoprefixer": "10.4.2",
+    "imagemin": "^8.0.1",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "imagemin-webp": "^7.0.0"
   },
   "dependencies": {
     "date-fns": "^2.28.0"

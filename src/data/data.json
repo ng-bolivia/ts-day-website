@@ -33,6 +33,7 @@
       {
         "name": "Lupe Maydana",
         "image": "/assets/images/lupe.jpg",
+        "imageWebp": "/assets/images/lupe.webp",
         "title": "Frontend Elite Engineer at Microsoft",
         "company": "Frontend Elite Engineer at Microsoft",
         "flag": "cif:bo",
@@ -51,6 +52,7 @@
       {
         "name": "Luis Aviles",
         "image": "/assets/images/luis.png",
+        "imageWebp": "/assets/images/luis.webp",
         "title": "Microsoft MVP & Google Dev Expert",
         "company": "Senior Software Engineer at This Dot",
         "isInBanner": true,
@@ -73,6 +75,7 @@
       {
         "name": "Vanessa Aristizabal",
         "image": "/assets/images/vane.png",
+        "imageWebp": "/assets/images/vane.webp",
         "title": "Google Dev Expert & Frontend at Sumer",
         "company": "Software Developer at JalaSoft",
         "flag": "cif:co",
@@ -92,6 +95,7 @@
       {
         "name": "Oscar Barajas",
         "image": "/assets/images/oscar.png",
+        "imageWebp": "/assets/images/oscar.webp",
         "title": "Microsoft MVP & Teacher at Platzi",
         "company": "Fondation Layer & Teacher at Platzi",
         "flag": "cif:mx",
@@ -114,6 +118,7 @@
       {
         "name": "Lizzy Mendivil",
         "image": "/assets/images/lizzymendivil.jpg",
+        "imageWebp": "/assets/images/lizzymendivil.webp",
         "title": "Software Developer at JalaSoft",
         "company": "Software Developer at JalaSoft and Community Organizer",
         "flag": "cif:bo",
@@ -132,6 +137,7 @@
       {
         "name": "Nicolas Molina",
         "image": "/assets/images/nico.png",
+        "imageWebp": "/assets/images/nico.webp",
         "title": "Google Dev Expert & Teacher at Platzi",
         "company": "Frontend Senior & Teacher at Platzi",
         "flag": "cif:co",
@@ -154,6 +160,7 @@
       {
         "name": "Dani Meneses",
         "image": "/assets/images/dmeneses.jpg",
+        "imageWebp": "/assets/images/dmeneses.webp",
         "title": "Software Developer at JalaSoft",
         "company": "Software Developer at JalaSoft",
         "flag": "cif:bo",
@@ -172,6 +179,7 @@
       {
         "name": "Rodrigo Torrico",
         "image": "/assets/images/rodri.png",
+        "imageWebp": "/assets/images/rodri.webp",
         "title": "Full Stack Developer",
         "company": "Software Developer at JalaSoft",
         "flag": "cif:bo",
