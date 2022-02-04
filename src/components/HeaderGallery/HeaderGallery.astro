@@ -1,10 +1,10 @@
 ---
-import { Sprite } from 'astro-icon';
 import data from '../../data/data.json';
+const speakers = data.Speakers.data.filter(item => item.isInBanner)
 ---
 
 <div class="grid">
-  {data.Speakers.data.map(item => (
+  {speakers.map(item => (
     <div class="grid-item">
       <div class="cover">
         <img src={item.image} alt={item.name} />
@@ -57,7 +57,7 @@ import data from '../../data/data.json';
     color: white;
   }
   .speaker-info .speaker-name {
-    font-size: .9rem;
+    font-size: .7rem;
   }
   .speaker-info .speaker-title {
     font-size: .6rem;

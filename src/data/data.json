@@ -2,7 +2,7 @@
   "Header": {
     "title": "TypeScript Day",
     "subTitle": "Sábado 19 de febrero de 2022, Evento Online.",
-    "text": "Aprende sobre el lenguaje que cambió todo para el ecosistema de JavaScript, de la mano de expertos en el área en esta conferencia tendremos: <strong>9 speakers y una sesión de networking</strong> y lo mejor de todo es ¡Gratis!!",
+    "text": "Aprende sobre el lenguaje que cambió todo para el ecosistema de JavaScript, de la mano de expertos en el área en esta conferencia tendremos: <strong>9 speakers y una sesión de networking</strong> y lo mejor de todo es ¡Gratis!",
     "countdownText": "Registraté ahora y reserva tu cupo, el evento iniciará en:"
   },
   "RegisterForm": {
@@ -71,20 +71,20 @@
         ]
       },
       {
-        "name": "Dani Meneses",
-        "image": "/assets/images/dmeneses.jpg",
-        "title": "Software Developer at JalaSoft",
+        "name": "Vanessa Aristizabal",
+        "image": "/assets/images/vane.png",
+        "title": "Google Dev Expert & Frontend at Sumer",
         "company": "Software Developer at JalaSoft",
-        "flag": "cif:bo",
+        "flag": "cif:co",
         "isInBanner": true,
         "links": [
           {
             "icon":"fa:twitter",
-            "url": "https://twitter.com/DAN_11290"
+            "url": "https://twitter.com/vanessamarely"
           },
           {
             "icon":"fa:github",
-            "url": "https://github.com/dmenesesl"
+            "url": "https://github.com/vanessamarely"
           }
         ]
       },
@@ -148,6 +148,42 @@
           {
             "icon":"fa:youtube",
             "url": "https://www.youtube.com/c/nicobytes"
+          }
+        ]
+      },
+      {
+        "name": "Dani Meneses",
+        "image": "/assets/images/dmeneses.jpg",
+        "title": "Software Developer at JalaSoft",
+        "company": "Software Developer at JalaSoft",
+        "flag": "cif:bo",
+        "isInBanner": false,
+        "links": [
+          {
+            "icon":"fa:twitter",
+            "url": "https://twitter.com/DAN_11290"
+          },
+          {
+            "icon":"fa:github",
+            "url": "https://github.com/dmenesesl"
+          }
+        ]
+      },
+      {
+        "name": "Rodrigo Torrico",
+        "image": "/assets/images/rodri.png",
+        "title": "Full Stack Developer",
+        "company": "Software Developer at JalaSoft",
+        "flag": "cif:bo",
+        "isInBanner": false,
+        "links": [
+          {
+            "icon":"fa:twitter",
+            "url": "https://twitter.com/rotorrico"
+          },
+          {
+            "icon":"fa:linkedin",
+            "url": "https://www.linkedin.com/in/rtorricodev/"
           }
         ]
       }
