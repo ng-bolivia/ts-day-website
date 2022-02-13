@@ -1,29 +1,29 @@
-import { set, format, differenceInMinutes } from "date-fns";
+import { set, differenceInMinutes, format } from "date-fns";
+import spacetime from "spacetime";
 import data from "../../data/data.json";
-import './Schedule.css';
+import "./Schedule.css";
 
 const Schedule = () => {
-  const baseDate = new Date(2022, 1, 19);
-
   const sessions = data.Schedule.sessions;
+  const timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
-  const parseDate = (time: string, formatStr: string) => {
+  const parseDate = (time: string) => {
     const [hours, minutes] = time.split(":");
-    const newDate = set(baseDate, {
-      hours: parseInt(hours, 10),
-      minutes: parseInt(minutes, 10),
-    });
-    return format(newDate, formatStr);
+    let d = spacetime.now('America/La_Paz');
+    d = d.hour(parseInt(hours, 10));
+    d = d.minute(parseInt(minutes, 10));
+    d = d.goto(timeZone);
+    return d.time();
   };
 
   const calcDiff = (start: string, end: string) => {
     const [startHours, startMinutes] = start.split(":");
-    const startDate = set(baseDate, {
+    const startDate = set(new Date(), {
       hours: parseInt(startHours, 10),
       minutes: parseInt(startMinutes, 10),
     });
     const [endHours, endMinutes] = end.split(":");
-    const endDate = set(baseDate, {
+    const endDate = set(new Date(), {
       hours: parseInt(endHours, 10),
       minutes: parseInt(endMinutes, 10),
     });
@@ -35,8 +35,9 @@ const Schedule = () => {
       <div className="container">
         <h2>{data.Schedule.title}</h2>
         <p className="copy">
-          Un día lleno de charlas increíbles que no te puedes perder recuerda que la agenda a continuación se muestra en la zona horaria de tu país es decir en{" "}
-          <b>{format(new Date(), "OOOO")}</b>
+          Un día lleno de charlas increíbles que no te puedes perder recuerda
+          que la agenda a continuación se muestra en la zona horaria de tu país
+          es decir en <b>{timeZone}</b>
         </p>
 
         <div className="talks">
@@ -44,8 +45,8 @@ const Schedule = () => {
             <div className="talk" key={session.title}>
               <div className="meta">
                 <p className="time">
-                  {parseDate(session.time.start, "hh:mm")} -{" "}
-                  {parseDate(session.time.end, "hh:mm a")} (
+                  {parseDate(session.time.start)} -{" "}
+                  {parseDate(session.time.end)} (
                   {calcDiff(session.time.start, session.time.end)}min)
                 </p>
                 <picture>
@@ -67,7 +68,9 @@ const Schedule = () => {
               <div className="content">
                 <h3>{session.title}</h3>
                 <div>
-                  <p dangerouslySetInnerHTML={{ __html: session.description }}></p>
+                  <p
+                    dangerouslySetInnerHTML={{ __html: session.description }}
+                  ></p>
                 </div>
               </div>
             </div>
