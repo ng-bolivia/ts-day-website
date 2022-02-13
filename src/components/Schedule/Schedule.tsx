@@ -35,7 +35,7 @@ const Schedule = () => {
       <div className="container">
         <h2>{data.Schedule.title}</h2>
         <p className="copy">
-          Un día lleno de charlas increíbles que no te puedes perder recuerda
+          Un día lleno de charlas increíbles que no te puedes perder, recuerda
           que la agenda a continuación se muestra en la zona horaria de tu país
           es decir en <b>{timeZone}</b>
         </p>
