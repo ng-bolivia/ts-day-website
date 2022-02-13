@@ -32,8 +32,8 @@
     "data": [
       {
         "name": "Lupe Maydana",
-        "image": "/assets/images/lupe.jpg",
-        "imageWebp": "/assets/images/lupe.webp",
+        "image": "/assets/images/speakers/lupe.jpg",
+        "imageWebp": "/assets/images/speakers/lupe.webp",
         "title": "Frontend Elite Engineer at Microsoft",
         "company": "Frontend Elite Engineer at Microsoft",
         "flag": "cif:bo",
@@ -51,8 +51,8 @@
       },
       {
         "name": "Luis Aviles",
-        "image": "/assets/images/luis.png",
-        "imageWebp": "/assets/images/luis.webp",
+        "image": "/assets/images/speakers/luis.png",
+        "imageWebp": "/assets/images/speakers/luis.webp",
         "title": "Microsoft MVP & Google Dev Expert",
         "company": "Senior Software Engineer at This Dot",
         "isInBanner": true,
@@ -74,8 +74,8 @@
       },
       {
         "name": "Vanessa Aristizabal",
-        "image": "/assets/images/vane.png",
-        "imageWebp": "/assets/images/vane.webp",
+        "image": "/assets/images/speakers/vane.png",
+        "imageWebp": "/assets/images/speakers/vane.webp",
         "title": "Google Dev Expert & Frontend at Sumer",
         "company": "Software Developer at JalaSoft",
         "flag": "cif:co",
@@ -94,8 +94,8 @@
 
       {
         "name": "Oscar Barajas",
-        "image": "/assets/images/oscar.png",
-        "imageWebp": "/assets/images/oscar.webp",
+        "image": "/assets/images/speakers/oscar.png",
+        "imageWebp": "/assets/images/speakers/oscar.webp",
         "title": "Microsoft MVP & Teacher at Platzi",
         "company": "Fondation Layer & Teacher at Platzi",
         "flag": "cif:mx",
@@ -117,8 +117,8 @@
       },
       {
         "name": "Lizzy Mendivil",
-        "image": "/assets/images/lizzymendivil.jpg",
-        "imageWebp": "/assets/images/lizzymendivil.webp",
+        "image": "/assets/images/speakers/lizzymendivil.jpg",
+        "imageWebp": "/assets/images/speakers/lizzymendivil.webp",
         "title": "Software Developer at JalaSoft",
         "company": "Software Developer at JalaSoft and Community Organizer",
         "flag": "cif:bo",
@@ -136,8 +136,8 @@
       },
       {
         "name": "Nicolas Molina",
-        "image": "/assets/images/nico.png",
-        "imageWebp": "/assets/images/nico.webp",
+        "image": "/assets/images/speakers/nico.png",
+        "imageWebp": "/assets/images/speakers/nico.webp",
         "title": "Google Dev Expert & Teacher at Platzi",
         "company": "Frontend Senior & Teacher at Platzi",
         "flag": "cif:co",
@@ -159,8 +159,8 @@
       },
       {
         "name": "Dani Meneses",
-        "image": "/assets/images/dmeneses.jpg",
-        "imageWebp": "/assets/images/dmeneses.webp",
+        "image": "/assets/images/speakers/dmeneses.jpg",
+        "imageWebp": "/assets/images/speakers/dmeneses.webp",
         "title": "Software Developer at JalaSoft",
         "company": "Software Developer at JalaSoft",
         "flag": "cif:bo",
@@ -178,8 +178,8 @@
       },
       {
         "name": "Rodrigo Torrico",
-        "image": "/assets/images/rodri.png",
-        "imageWebp": "/assets/images/rodri.webp",
+        "image": "/assets/images/speakers/rodri.png",
+        "imageWebp": "/assets/images/speakers/rodri.webp",
         "title": "Full Stack Developer",
         "company": "Software Developer at JalaSoft",
         "flag": "cif:bo",
@@ -211,8 +211,64 @@
     "text": "Este evento tiene el apoyo de empresas y comunidades en toda la región y les agradecemos por ayudarnos a realizar este evento.",
     "logos": [
       {
-        "logo": "/assets/images/platzi.png",
-        "link": "https://platzi.com"
+        "logo": "/assets/images/parthers/platzi.png",
+        "logoWebp": "/assets/images/parthers/platzi.webp",
+        "link": "https://platzi.com",
+        "type": "gold"
+      },
+      {
+        "logo": "/assets/images/parthers/devteam.png",
+        "logoWebp": "/assets/images/parthers/devteam.webp",
+        "link": "https://twitter.com/DevTeam504",
+        "type": "normal"
+      },
+      {
+        "logo": "/assets/images/parthers/dominicode.png",
+        "logoWebp": "/assets/images/parthers/dominicode.webp",
+        "link": "https://twitter.com/domini_code",
+        "type": "normal"
+      },
+      {
+        "logo": "/assets/images/parthers/gdg-cbba.png",
+        "logoWebp": "/assets/images/parthers/gdg-cbba.webp",
+        "link": "https://www.facebook.com/GDGCochabamba/",
+        "type": "normal"
+      },
+      {
+        "logo": "/assets/images/parthers/gdg-paz.png",
+        "logoWebp": "/assets/images/parthers/gdg-paz.webp",
+        "link": "https://www.facebook.com/GDGLaPaz",
+        "type": "normal"
+      },
+      {
+        "logo": "/assets/images/parthers/gdg-tarija.png",
+        "logoWebp": "/assets/images/parthers/gdg-tarija.webp",
+        "link": "https://www.facebook.com/gdgtarija",
+        "type": "normal"
+      },
+      {
+        "logo": "/assets/images/parthers/gdsc.peru.png",
+        "logoWebp": "/assets/images/parthers/gdsc.peru.webp",
+        "link": "https://twitter.com/gdsc_utp",
+        "type": "normal"
+      },
+      {
+        "logo": "/assets/images/parthers/gdsc-mexico.png",
+        "logoWebp": "/assets/images/parthers/gdsc-mexico.webp",
+        "link": "https://gdsc.community.dev/universidad-autonoma-del-estado-de-mexico-cu-uaem-valle-de-mexico/",
+        "type": "normal"
+      },
+      {
+        "logo": "/assets/images/parthers/gdsc-sucre.png",
+        "logoWebp": "/assets/images/parthers/gdsc-sucre.webp",
+        "link": "https://gdg.community.dev/gdg-sucre/",
+        "type": "normal"
+      },
+      {
+        "logo": "/assets/images/parthers/gdsc-unah.png",
+        "logoWebp": "/assets/images/parthers/gdsc-unah.webp",
+        "link": "https://twitter.com/dscunahvs",
+        "type": "normal"
       }
     ]
   },
@@ -240,7 +296,146 @@
   },
   "Schedule": {
     "title": "Agenda",
-    "text": "Muy pronto tendrás los detalles de las conferencias y el horario."
+    "sessions": [
+      {
+        "title": "Keynote: ¿Por qué usar TypeScript?",
+        "description": "Sin duda has oído hablar de TypeScript en los últimos años y en esta charla te explicaré por qué utilizar TypeScript puede <b>reducir de forma instantánea el 15% de bugs</b> de tus sistemas y como equipos como Slack o Airbnb han logrado migrar sus sistemas a  TypeScript agregando, confiabilidad, reduciendo el riesgo de errores y siendo más productivos.",
+        "time": {
+          "start": "13:00",
+          "end": "13:20"
+        },
+        "speaker": {
+          "name": "Nicolas Molina",
+          "jobTitle": "Google Dev Expert & Teacher at Platzi",
+          "image": "/assets/images/speakers/nico.png",
+          "imageWebp": "/assets/images/speakers/nico.webp"
+        }
+      },
+      {
+        "title": "¿Qué ventajas tengo de usar TypeScript en React?",
+        "description": "El panorama común es crear aplicaciones en React con JavaScript, pero en la actualidad se ha adoptado TypeScript para aprovechar sus innumerables ventajas a la hora de crear <b>aplicaciones escalables y robustas</b>, convirtiendo a React en una herramienta a utilizar en cualquier tipo de modelo de negocio. En esta charla te hablaré de las ventajas al adoptar TypeScript en React y en Frameworks como Next.js.",
+        "time": {
+          "start": "13:25",
+          "end": "13:50"
+        },
+        "speaker": {
+          "name": "Vanessa Aristizabal",
+          "jobTitle": "Google Dev Expert & Frontend at Sumer",
+          "image": "/assets/images/speakers/vane.png",
+          "imageWebp": "/assets/images/speakers/vane.webp"
+        }
+      },
+      {
+        "title": "Organiza tu primer Meetup online",
+        "description": "No necesitas tener una comunidad de tecnología establecida para organizar tu primer evento público virtual tecnológico. <b>¿Tienes ganas de compartir tus conocimientos y hacer networking?</b> Con estos simples pasos podrás lanzarte al éxito.",
+        "time": {
+          "start": "13:55",
+          "end": "14:05"
+        },
+        "speaker": {
+          "name": "Lizzy Mendivil",
+          "jobTitle": "Software Developer at JalaSoft",
+          "image": "/assets/images/speakers/lizzymendivil.png",
+          "imageWebp": "/assets/images/speakers/lizzymendivil.webp"
+        }
+      },
+      {
+        "title": "Experimentando conceptos Avanzados de TypeScript",
+        "description": "TypeScript es un lenguaje potente que además de proveer un set de tipos de datos primitivos permite crear nuevos tipos a partir de otros basados en el principio DRY(don't repeat yourself). En esta presentación explicaremos de una manera práctica los fundamentos para <b>abordar conceptos avanzados en TypeScript como son los Generics, Mapped Types, Utility Functions y otros.</b>",
+        "time": {
+          "start": "14:10",
+          "end": "14:35"
+        },
+        "speaker": {
+          "name": "Luis Aviles",
+          "jobTitle": "Microsoft MVP & Google Dev Expert",
+          "image": "/assets/images/speakers/luis.png",
+          "imageWebp": "/assets/images/speakers/luis.webp"
+        }
+      },
+      {
+        "title": "Networking session",
+        "description": "Tendremos una actividad vía Zoom con organizadores, speakers y asistentes un <b>excelente momento para hacer networking.</b>",
+        "time": {
+          "start": "14:40",
+          "end": "15:00"
+        },
+        "speaker": {
+          "name": "Comunnity Space",
+          "image": "/assets/images/speakers/community.png",
+          "imageWebp": "/assets/images/speakers/community.png"
+        }
+      },
+      {
+        "title": "¿Este trabajo es bueno para mí?",
+        "description": "Muchas veces los programadores no evaluamos el trabajo que tenemos o <b>no tenemos muchos criterios para seleccionar la empresa</b> a la que vamos a aplicar. Es importante darse cuenta  de las buenas oportunidades, antes que solo la remuneración salarial. Esta charla les ayudará a evaluar, y  entender si el trabajo actual que tienen o al que está aplicando, es un buen lugar para desempeñarse. ",
+        "time": {
+          "start": "15:05",
+          "end": "15:15"
+        },
+        "speaker": {
+          "name": "Rodrigo Torrico",
+          "jobTitle": "Full Stack Developer",
+          "image": "/assets/images/speakers/rodri.png",
+          "imageWebp": "/assets/images/speakers/rodri.webp"
+        }
+      },
+      {
+        "title": "La WEB 3 se construye en TypeScript",
+        "description": "Web3 una propuesta que nos permite apropiarnos de la información, utilizando tecnologías blockchain y aprovechando nuestro conocimiento para crear aplicaciones descentralizadas, <b>hablemos de Web3JS y la importancia de TypeScript.</b>",
+        "time": {
+          "start": "15:20",
+          "end": "15:45"
+        },
+        "speaker": {
+          "name": "Oscar Barajas",
+          "jobTitle": "Microsoft MVP & Teacher at Platzi",
+          "image": "/assets/images/speakers/oscar.png",
+          "imageWebp": "/assets/images/speakers/oscar.webp"
+        }
+      },
+      {
+        "title": "Creación de plug-ins ESLint para proyectos en TypeScript",
+        "description": "¿Sientes que tus archivos de configuración ESLint son copiados constantemente entre proyectos? <b>Evita repetir tus configuraciones una y otra vez creando un plugin que centralice estas.</b> Y además generar un espacio donde puedas generar nuevas reglas de ESLint y así cubrir validaciones específicas de tu proyecto.",
+        "time": {
+          "start": "15:50",
+          "end": "16:00"
+        },
+        "speaker": {
+          "name": "Dani Meneses",
+          "jobTitle": "Software Developer at JalaSoft",
+          "image": "/assets/images/speakers/dmeneses.png",
+          "imageWebp": "/assets/images/speakers/dmeneses.webp"
+        }
+      },
+      {
+        "title": "Playwright, end-to-end testing for web apps",
+        "description": "Testear a tus aplicaciones web puede llegar a ser una tarea compleja si tomas en cuenta que tu aplicación puede ser usada desde diversos navegadores y dispositivos, eso implica distintos tamaños de pantalla y diversos comportamientos,  en esta charla exploraremos que es y cómo <b>usar Playwright para automatizar este proceso de testing.</b>",
+        "time": {
+          "start": "16:05",
+          "end": "16:30"
+        },
+        "speaker": {
+          "name": "Lupe Maydana",
+          "jobTitle": "Frontend Elite Engineer at Microsoft",
+          "image": "/assets/images/speakers/lupe.png",
+          "imageWebp": "/assets/images/speakers/lupe.webp"
+        }
+      },
+      {
+        "title": "Cierre y entrega de regalos",
+        "description": "En el cierre oficial de evento contestaremos las últimas preguntas y anunciaremos a los <b>5 ganadores de suscripciones por 1 año a Platzi.</b>",
+        "time": {
+          "start": "16:35",
+          "end": "17:00"
+        },
+        "speaker": {
+          "name": "Comunnity Space",
+          "image": "/assets/images/speakers/community.png",
+          "imageWebp": "/assets/images/speakers/community.png"
+        }
+      }
+    ]
   },
   "MetaTags": {
     "title": "TypeScript Day",

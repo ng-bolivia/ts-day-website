@@ -1,0 +1,132 @@
+.Schedule {
+  padding: 2rem;
+}
+.Schedule .copy {
+  padding: 0 2rem;
+}
+.talks {
+  margin: 2rem 0 0 0;
+}
+.talk {
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem 0;
+  background: rgba(0, 122, 205, .1);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+.talk img {
+  border-radius: 50%;
+  width: 30%;
+  border: 5px solid var(--color-blue-two);
+}
+.Schedule p {
+  margin-bottom: 1rem;
+}
+.Schedule p.speakerName {
+  margin-bottom: 0;
+}
+.Schedule p.speakerTitle {
+  font-size: .7rem;
+}
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .Schedule {
+    padding: 2rem 4rem;
+  }
+  .talks {
+    margin: 5rem 0 0 0;
+  }
+  .talk {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0;
+    background: none;
+    padding: 0;
+  }
+  .talk .meta {
+    width: 30%;
+    position: relative;
+    padding-bottom: 5rem;
+  }
+  .talk .meta::after {
+    position: absolute;
+    top: 0;
+    right: -1.65rem;
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--color-blue-two);
+    display: block;
+  }
+  .talk .meta::before {
+    position: absolute;
+    top: 0;
+    right: -1rem;
+    content: '';
+    width: 2px;
+    height: 100%;
+    background: #ccc;
+    display: block;
+  }
+  .talk .content {
+    width: 65%;
+    text-align: left;
+  }
+  .talk img {
+    width: 40%;
+  }
+}
+
+/* Large and up */
+@media screen and (min-width: 64em) {
+  .Schedule {
+    padding: 2rem 5rem;
+  }
+  .talks {
+    margin: 5rem 0 0 0;
+  }
+  .talk {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin:0;
+    background: none;
+    padding: 0;
+  }
+  .talk .meta {
+    width: 25%;
+    position: relative;
+    padding-bottom: 5rem;
+  }
+  .talk .meta::after {
+    position: absolute;
+    top: 0;
+    right: -1.6rem;
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--color-blue-two);
+    display: block;
+  }
+  .talk .meta::before {
+    position: absolute;
+    top: 0;
+    right: -1rem;
+    content: '';
+    width: 2px;
+    height: 100%;
+    background: #ccc;
+    display: block;
+  }
+  .talk .content {
+    width: 70%;
+    text-align: left;
+  }
+  .talk img {
+    width: 40%;
+  }
+}

@@ -5,8 +5,19 @@ import data from '../../data/data.json';
   <div class="container">
     <h2>{data.Parthers.title}</h2>
     <p>{data.Parthers.text}</p>
+    <div class="logos-gold">
+      {
+        data.Parthers.logos
+          .filter(item => item.type === 'gold')
+          .map((item) => <a href={item.link} target="_blank"><img src={item.logo} alt="" /></a>)
+      }
+    </div>
     <div class="logos">
-      {data.Parthers.logos.map((item) => <a href={item.link} target="_blank"><img src={item.logo} alt="" /></a>)}
+      {
+        data.Parthers.logos
+          .filter(item => item.type === 'normal')
+          .map((item) => <a href={item.link} target="_blank"><img src={item.logo} alt="" /></a>)
+      }
     </div>
   </div>
 </section>
@@ -21,10 +32,44 @@ import data from '../../data/data.json';
   }
   .logos {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center
+    flex-direction: column;
+  }
+  .logos-gold {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
   }
   .logos img {
     max-width: 100%;
+  }
+  .logos-gold img {
+    max-width: 100%;
+  }
+  /* Medium only */
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .logos {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: auto;
+      grid-gap: 1rem;
+      padding: 2rem;
+    }
+    .logos-gold img {
+      max-width: 60%;
+    }
+  }
+
+  /* Large and up */
+  @media screen and (min-width: 64em) {
+    .logos {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: auto;
+      grid-gap: 1rem;
+      padding: 2rem;
+    }
+    .logos-gold img {
+      max-width: 60%;
+    }
   }
 </style>

@@ -7,7 +7,7 @@ import Organizer from '../components/Organizer/Organizer.astro';
 import Parthers from '../components/Parthers/Parthers.astro';
 import Footer from '../components/Footer/Footer.astro';
 import Register from '../components/Register/Register.astro';
-import Schedule from '../components/Schedule/Schedule.astro';
+import Schedule from '../components/Schedule/Schedule.tsx';
 import MetaTags from '../components/MetaTags/MetaTags.astro';
 
 const title = 'TypeScript Day';
@@ -38,10 +38,10 @@ const title = 'TypeScript Day';
   <Sprite.Provider>
   	<main>
   		<Header />
-      <About />
+      <Schedule client:visible />
       <Register />
       <Speakers />
-      <Schedule />
+      <About />
       <Organizer />
       <Parthers />
       <Footer />
