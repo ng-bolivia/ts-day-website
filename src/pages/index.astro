@@ -9,6 +9,7 @@ import Footer from '../components/Footer/Footer.astro';
 import Register from '../components/Register/Register.astro';
 import Schedule from '../components/Schedule/Schedule.tsx';
 import MetaTags from '../components/MetaTags/MetaTags.astro';
+import VideoConf from '../components/VideoConf/VideoConf.astro';
 
 const title = 'TypeScript Day';
 ---
@@ -37,6 +38,7 @@ const title = 'TypeScript Day';
 <body>
   <Sprite.Provider>
   	<main>
+      <VideoConf />
   		<Header />
       <Schedule client:visible />
       <Register />
